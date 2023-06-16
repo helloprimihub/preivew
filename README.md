@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/helloprimihub/img/main/readme/header.jpeg" alt="Header">
+  <img src="https://raw.githubusercontent.com/helloprimihub/img/main/readme/header2.jpeg" alt="Header">
   <br>
 
   <p align="center"><strong>由密码学专家团队打造的开源隐私计算平台</strong></p>
@@ -49,14 +49,16 @@ git clone https://github.com/primihub/primihub.git
 # 第二步：启动
 cd primihub && docker-compose up -d
 # 第三步：进入部署好的环境
-docker exec -it primihub-node0 bash # 进入部署好的环境
+docker exec -it primihub-node0 bash
 # 第四步：执行隐私求交计算
 ./primihub-cli --task_config_file="example/psi_ecdh_task_conf.json"
+I20230616 13:40:10.683375    28 cli.cc:524] all node has finished
+I20230616 13:40:10.683745    28 cli.cc:598] SubmitTask time cost(ms): 1419
 # 查看结果
 cat data/result/psi_result.csv
-
 "intersection_row"
-A big company 4
+X3
+...
 ```
 
 <p align="center"><img src="https://raw.githubusercontent.com/helloprimihub/img/main/readme/kt.gif" width=700 alt="PSI"></p>
